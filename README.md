@@ -9,6 +9,18 @@ APPARATUS REQUIRED:
 Xilinx 14.7
 Spartan6 FPGA
 
+STEP:1 Start the vivado software, Select and Name the New project. 
+STEP:2 Select the device family, device, package and speed.  
+STEP:3 Select new source in the New Project and select Verilog Module as the 
+Source type. 
+STEP:4 Type the File Name and module name and Click Next and then finish 
+button. Type the code and save it. 
+STEP:5 Select the run simulation adn then run Behavioral Simulation in the 
+Source Window and click the check syntax.  
+STEP:6 Click the simulation to simulate the program and give the inputs and 
+verify the outputs as per the truth table.  
+STEP:7 compare the output with truth table.
+
 **LOGIC DIAGRAM**
 
 SR FLIPFLOP
@@ -49,12 +61,30 @@ STEP:9  In the Design Object List Window, enter the pin location for each pin in
 STEP:10 Double click on the Implement Design and double click on the Generate Programming File to create a bitstream of the design.(.v) file is converted into .bit file here.
 STEP:11  On the board, by giving required input, the LEDs starts to glow light, indicating the output.
 
-VERILOG CODE
+jk dlig
 
-   <<< TYPE YOUR VERILOG CODE >>>
+
+VERILOG CODE
+module updown(clk,rst,updown,out);
+input clk,rst,updown;
+output reg[3:0]out;
+always@(posedge clk)
+begin
+     if(rst==1)
+       out=4'b0000;
+      else
+         if(updown==1)
+           out=out+1'b1;
+         else
+           out=out-1'b1;
+end
+endmodule
+
+   <<
 
 OUTPUT WAVEFORM
- <<< PASTE YOUR OUTPUT WAVEFORM >>>
+ <
+![logicgit](https://github.com/nithin2134/VLSI-LAB-EXP-4/assets/160302970/b15f3b95-37b5-41ad-a975-149aba8837b7)
 
 RESULT
 
