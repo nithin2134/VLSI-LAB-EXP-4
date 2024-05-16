@@ -4,7 +4,7 @@
 
 **AIM:** 
 
-To simulate and synthesis SR, JK, T, D - FLIPFLOP, COUNTER DESIGN using Vivado 2023.
+To simulate and synthesis SR, JK, T, D - FLIPFLOP, COUNTER DESIGN using Vivado 2023..
 
 **APPARATUS REQUIRED:**
 
